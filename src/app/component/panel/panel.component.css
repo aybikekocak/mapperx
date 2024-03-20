@@ -1,0 +1,12 @@
+span{
+  cursor: pointer;
+}
+
+.button{
+  display: flex;
+  margin-top: 4px;
+  color: white;
+}
+.icon{
+  color: white;
+}

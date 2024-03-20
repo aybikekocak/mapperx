@@ -1,0 +1,10 @@
+.border{
+  border: 1px solid #eedddd;
+  padding: 50px;
+  border-radius: 6px
+}
+
+a{
+  height: 50px;
+  border: 1px solid;
+}

@@ -1,0 +1,19 @@
+I created this HTML code as follows because a form was required for users to log in to the system. The form facilitates email and password entry, and I used the formGroup attribute with a JavaScript framework like Angular for form validation.
+
+I added id, name, and formControlName attributes to the email input field because these attributes are necessary to provide functionality to the form and bind the form control to a property within the component.
+
+Similarly, I included these attributes for the password input field because ensuring users can securely enter their passwords is crucial.
+
+I attached a (click) event handler to the login button because users need the login process to occur when they click this button.
+
+I designed the navigation bar to hide some elements on small screens to enhance the user experience by reducing unnecessary information and complexity.
+
+In the products section, I used this structure to allow users to view products with their respective images and descriptions.
+
+In the profile section, I added a form to enable users to easily update their profile information.
+
+The applicant information section was created to allow users to easily view their basic information, ensuring it is easily accessible.
+
+The attachments section was structured to allow users to easily view and manage the files they have uploaded.
+
+Finally, I used CSS to style the entire page because it's essential for a web page to be visually appealing and user-friendly.
