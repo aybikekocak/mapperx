@@ -16,5 +16,9 @@ Navigate to `http://localhost:4200/` to view the application. The development se
 
 ## Additional Commands
 
-- **Code Scaffolding**: Use the Angular CLI to generate new components, directives, pipes, services, classes, guards, interfaces, enums, or modules. 
+- **Code Scaffolding**: Use the Angular CLI to generate new components, directives, pipes, services, classes, guards, interfaces, enums, or modules.
+
+  #Firebase Hosting:
+   Project Console: https://console.firebase.google.com/project/mapperprojects/overview
+   Hosting URL: https://mapperprojects.web.app
 
