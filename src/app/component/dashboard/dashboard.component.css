@@ -8,3 +8,212 @@ a{
   height: 50px;
   border: 1px solid;
 }
+/* styles.css */
+.container {
+  display: flex;
+  padding: 20px;
+  border-color: red;
+  background-color: #333;
+  height: 450px;
+}
+  /*.container {*/
+  /*  perspective: 1000px;*/
+  /*}*/
+
+  /*.container:hover {*/
+  /*  transform: rotateY(10deg);*/
+  /*}*/
+
+  /*.card {*/
+  /*  !*box-shadow: 0 8px 30px rgba(0,0,0,0.2), 0 0 5px rgba(0,0,0,0.15);*!*/
+  /*  transform: scale3d(1, 1, 1);*/
+  /*  transition: all 0.2s ease-out, filter 0.75s ease-out;*/
+  /*  !*background: rgba(0,0,0,0.2);*!*/
+  /*  filter: grayscale(0.1) saturate(95%) brightness(95%) contrast(90%);*/
+  /*}*/
+
+.mouse-cursor-gradient-tracking {
+  position: relative;
+  padding:1em;
+  font-size: 1.2rem;
+  border: none;
+  /*color: #1f6feb;*/
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+.mouse-cursor-gradient-tracking span {
+  position: relative;
+}
+.mouse-cursor-gradient-tracking::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  /*   background: radial-gradient(red 1em , greenyellow 1px, transparent); */
+  background: radial-gradient( circle closest-side, rgba(85, 9, 124, 0.47) 1px, transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+.mouse-cursor-gradient-tracking:hover::before {
+  --size: 90vh;
+}
+
+
+.card:hover {
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 15px rgba(0,0,0,0.3);
+  filter: grayscale(0) saturate(105%) brightness(100%) contrast(100%);
+}
+
+.card {
+  backdrop-filter: blur(5px);
+  min-width: 50vh;
+  height: 40vh;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.051),
+  0px 0px 7.2px rgba(0, 0, 0, 0.073), 0px 0px 13.6px rgba(0, 0, 0, 0.09),
+  0px 0px 24.3px rgba(0, 0, 0, 0.107), 0px 0px 45.5px rgba(0, 0, 0, 0.129),
+  0px 0px 109px rgba(0, 0, 0, 0.18);
+}
+
+
+
+
+.rounded-3{
+  border-radius: 8px !important;
+}
+.left-panel {
+  padding: 20px;
+  color: white;
+  z-index: 1;
+}
+
+.right-panel {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+  float: right;
+
+}
+.small-cards{
+  margin-top: -3rem;
+  margin-right: -5rem;
+}
+.container {
+  overflow: hidden;
+}
+.card-infos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.rounded-div{
+  transform: rotate(-15deg) translateZ(10px);
+}
+.card-size{
+  max-height: 480px;
+  height: 11rem;
+  width: 11rem;
+}
+.btn-sponsor{
+  width: 6rem;
+  font-size: 12px;
+  height: 2rem;
+}
+.link {
+  border: none;
+  height: 50%;
+  display: flex;
+  align-items: end;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s;
+}
+
+.link:hover::before {
+  width: 50%;
+}
+
+.link strong {
+  position: relative;
+  z-index: 1;
+}
+
+
+.github{
+  height: 50%;
+  font-size:24px;
+  line-height: 32px !important;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 572px)  {
+ .card{
+   height: 100vh !important;
+   display: flex;
+   flex-direction: column;
+ }
+  .small-cards{
+    margin-top: -1rem;
+    margin-right: -20rem;
+    margin-bottom: -2rem;
+  }
+  .column{
+    margin-top: 20px !important;
+  }
+}
+
+@media screen and (max-width: 712px)  {
+  .github{
+    font-size:15px;
+  }
+  .link {
+    font-size: 10px;
+  }
+
+  .right-panel {
+    flex: 2;
+    display: flex;
+    gap: 20px;
+    float: right;
+  }
+  .small-cards{
+    margin-top: -5rem;
+    margin-right: -15rem;
+  }
+}
