@@ -29,8 +29,8 @@ ngOnInit() {
   cardElements.forEach((card: any) => {
     card.addEventListener("mousemove", (e: MouseEvent) => {
       const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left; //x position within the element.
-      const y = e.clientY - rect.top; //y position within the element.
+      const x = e.clientX - rect.left; 
+      const y = e.clientY - rect.top; 
       const offsetX = x / rect.width;
       const offsetY = y / rect.height;
 
